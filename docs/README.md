@@ -1,4 +1,4 @@
-# FPS - Fractal Pulsating Spiral v1.3
+# FPS - Fractal Pulsating Spiral v1.3 
 
 ## 🌀 Vue d'ensemble
 
