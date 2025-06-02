@@ -2,7 +2,7 @@
 
 ## 🌀 Vue d'ensemble
 
-La FPS (Fractale Poétique Spiralée) est un système d'oscillateurs adaptatifs avec régulation spiralée, auto-organisation émergente et plasticité méthodologique. Elle explore comment des strates interconnectées peuvent générer des dynamiques harmonieuses et résilientes.
+La FPS (Fractal Pulsating Spiral) est un système d'oscillateurs adaptatifs avec régulation spiralée, auto-organisation émergente et plasticité méthodologique. Elle explore comment des strates interconnectées peuvent générer des dynamiques harmonieuses et résilientes.
 
 ### Caractéristiques principales
 - **Oscillateurs adaptatifs** : Amplitude et fréquence modulées par le contexte
