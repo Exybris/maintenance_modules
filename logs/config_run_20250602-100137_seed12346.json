@@ -1,0 +1,190 @@
+{
+  "system": {
+    "N": 3,
+    "T": 100,
+    "dt": 0.1,
+    "seed": 12346,
+    "mode": "FPS",
+    "logging": {
+      "level": "INFO",
+      "output": "csv",
+      "log_metrics": [
+        "t",
+        "S(t)",
+        "A_mean(t)",
+        "f_mean(t)",
+        "effort(t)",
+        "cpu_step(t)",
+        "C(t)",
+        "E(t)",
+        "L(t)",
+        "variance_d2S",
+        "entropy_S",
+        "effort_status",
+        "mean_abs_error",
+        "mean_high_effort",
+        "d_effort_dt",
+        "t_retour",
+        "max_median_ratio"
+      ]
+    },
+    "perturbation": {
+      "type": "choc",
+      "t0": 25,
+      "amplitude": 1.0,
+      "duration": null,
+      "freq": null
+    }
+  },
+  "strates": [
+    {
+      "A0": 1.0,
+      "f0": 1.0,
+      "phi": 0.0,
+      "alpha": 0.5,
+      "beta": 1.0,
+      "k": 2.0,
+      "x0": 0.5,
+      "w": [
+        0.0,
+        0.1,
+        -0.1
+      ]
+    },
+    {
+      "A0": 1.0,
+      "f0": 1.0,
+      "phi": 0.0,
+      "alpha": 0.5,
+      "beta": 1.0,
+      "k": 2.0,
+      "x0": 0.5,
+      "w": [
+        0.1,
+        0.0,
+        -0.1
+      ]
+    },
+    {
+      "A0": 1.0,
+      "f0": 1.0,
+      "phi": 0.0,
+      "alpha": 0.5,
+      "beta": 1.0,
+      "k": 2.0,
+      "x0": 0.5,
+      "w": [
+        -0.1,
+        0.1,
+        0.0
+      ]
+    }
+  ],
+  "dynamic_parameters": {
+    "dynamic_phi": false,
+    "dynamic_beta": false,
+    "dynamic_alpha": false
+  },
+  "spiral": {
+    "phi": 1.618,
+    "epsilon": 0.05,
+    "omega": 0.1,
+    "theta": 0.0
+  },
+  "regulation": {
+    "G_arch": "tanh",
+    "lambda": 1.0,
+    "alpha": null,
+    "beta": null,
+    "dynamic_G": false
+  },
+  "latence": {
+    "gamma_mode": "static",
+    "gamma_static_value": 1.0,
+    "gamma_dynamic": {
+      "k": 2.0,
+      "t0": 50
+    },
+    "gamma_n_mode": "static",
+    "gamma_n_dynamic": {
+      "k_n": 2.0,
+      "t0_n": 50
+    }
+  },
+  "enveloppe": {
+    "env_mode": "static",
+    "mu_n": 0.0,
+    "sigma_n_static": 0.1,
+    "sigma_n_dynamic": {
+      "amp": 0.05,
+      "freq": 1,
+      "offset": 0.1,
+      "T": 100
+    }
+  },
+  "exploration": {
+    "metrics": [
+      "S(t)",
+      "C(t)",
+      "A_mean(t)",
+      "f_mean(t)",
+      "entropy_S",
+      "effort(t)",
+      "mean_high_effort",
+      "d_effort_dt",
+      "mean_abs_error"
+    ],
+    "window_sizes": [
+      1,
+      10,
+      100
+    ],
+    "fractal_threshold": 0.8,
+    "detect_fractal_patterns": true,
+    "detect_anomalies": true,
+    "detect_harmonics": true,
+    "recurrence_window": [
+      1,
+      10,
+      100
+    ],
+    "anomaly_threshold": 3.0,
+    "min_duration": 3
+  },
+  "to_calibrate": {
+    "variance_d2S": 0.01,
+    "stability_ratio": 10,
+    "resilience": 2,
+    "entropy_S": 0.5,
+    "mean_high_effort": 2,
+    "d_effort_dt": 5,
+    "t_retour": 2,
+    "gamma_n": 1.0,
+    "env_n": "gaussienne",
+    "sigma_n": 0.1,
+    "cpu_step_ctrl": 2,
+    "max_chaos_events": 5
+  },
+  "validation": {
+    "criteria": [
+      "fluidity",
+      "stability",
+      "resilience",
+      "innovation",
+      "regulation",
+      "cpu_cost",
+      "effort_internal",
+      "effort_transient"
+    ],
+    "alert_sigma": 3,
+    "batch_size": 5,
+    "refine_after_runs": true,
+    "auto_log_refinement": true
+  },
+  "analysis": {
+    "compare_kuramoto": true,
+    "save_indiv_files": true,
+    "export_html_report": true,
+    "visualize_grid": true
+  }
+}

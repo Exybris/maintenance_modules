@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "timestamp": "2025-06-02T10:01:36.163539",
+    "fps_run_id": "run_20250602-100135_seed12345",
+    "kuramoto_run_id": "run_20250602-100135_seed12345",
+    "neutral_run_id": "run_20250602-100136_seed12345"
+  },
+  "detailed_metrics": {
+    "synchronization": {
+      "fps_value": 0,
+      "kuramoto_value": 0.723473570278907,
+      "neutral_value": 0,
+      "fps_vs_kuramoto_efficiency": -99.99999998617778,
+      "fps_vs_neutral_efficiency": 0.0
+    },
+    "stability": {
+      "fps_value": 1.7528148632035037,
+      "kuramoto_value": 0.5185725254518575,
+      "neutral_value": 0.8164965808610595,
+      "fps_vs_kuramoto_efficiency": 238.0076608258764,
+      "fps_vs_neutral_efficiency": 114.67510142422744
+    },
+    "resilience": {
+      "fps_value": 0.9090909090909091,
+      "kuramoto_value": 1.0,
+      "neutral_value": 0.1,
+      "fps_vs_kuramoto_efficiency": -9.090909090000004,
+      "fps_vs_neutral_efficiency": 809.0909082818182
+    },
+    "innovation": {
+      "fps_value": 0.5,
+      "kuramoto_value": 0.12895550589702773,
+      "neutral_value": 0,
+      "fps_vs_kuramoto_efficiency": 287.73063331745163,
+      "fps_vs_neutral_efficiency": 500000000000.0
+    },
+    "cpu_efficiency": {
+      "fps_value": 98965.55266422576,
+      "kuramoto_value": 205354.4811941288,
+      "neutral_value": 733074.2323198109,
+      "fps_vs_kuramoto_efficiency": -51.80745407222441,
+      "fps_vs_neutral_efficiency": -86.49992752424951
+    },
+    "global_score": {
+      "fps": 19793.742913999613,
+      "kuramoto": 41071.370439146085,
+      "neutral": 146615.02976327835,
+      "fps_vs_kuramoto_efficiency": -51.806470779134784,
+      "fps_vs_neutral_efficiency": -86.49951308132717
+    }
+  },
+  "summary": {
+    "fps_advantages": [
+      "stability: +238.0% vs Kuramoto",
+      "innovation: +287.7% vs Kuramoto"
+    ],
+    "fps_disadvantages": [
+      "synchronization: -100.0% vs Kuramoto",
+      "cpu_efficiency: -51.8% vs Kuramoto"
+    ],
+    "overall_verdict": "FPS montre des caract\u00e9ristiques uniques mais avec des compromis"
+  }
+}

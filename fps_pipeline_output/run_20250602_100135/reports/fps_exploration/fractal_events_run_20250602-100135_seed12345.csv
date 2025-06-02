@@ -1,0 +1,10 @@
+event_type,t_start,t_end,metric,value,severity,scale
+fractal_pattern,550,650,S(t),0.836581,medium,10/100
+fractal_pattern,100,200,C(t),0.927089,high,10/100
+fractal_pattern,150,250,C(t),0.953833,high,10/100
+fractal_pattern,250,350,C(t),0.924281,high,10/100
+fractal_pattern,300,400,C(t),0.927576,high,10/100
+fractal_pattern,350,450,C(t),0.927948,high,10/100
+fractal_pattern,400,500,C(t),0.929249,high,10/100
+fractal_pattern,450,550,C(t),0.923392,high,10/100
+fractal_pattern,500,600,C(t),0.859465,medium,10/100

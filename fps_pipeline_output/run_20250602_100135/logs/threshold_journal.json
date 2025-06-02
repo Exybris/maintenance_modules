@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-06-02T10:01:38.801868",
+  "thresholds": {
+    "fluidity": {
+      "threshold": 0.01,
+      "runs_triggered": 5,
+      "values_per_run": [
+        
